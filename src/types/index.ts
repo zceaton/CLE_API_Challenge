@@ -85,3 +85,7 @@ export type PlayerStatsDTO = {
 
 // IMPLEMENT ME!
 export type PlayerDetailDTO = {};
+
+export type PitchResult = {
+  pitches: Array<PitchDTO>;
+};
