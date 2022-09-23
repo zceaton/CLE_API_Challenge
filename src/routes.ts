@@ -1,4 +1,5 @@
 import Express from "express";
+import { PitchDTO, PlayerBioDTO, PlayerStatsDTO } from "./types";
 const router = Express.Router();
 
 router.get("/", (req, res) => {
