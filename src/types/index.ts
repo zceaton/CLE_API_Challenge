@@ -58,34 +58,36 @@ export type PlayerStatsDTO = {
   gbRate: number;
 };
 
-/* 
- This type is a combination of fields found in PlayerBioDTO
- and PlayerStatsDTO. The PlayerDetailDTO should contain the 
- following fields:
-  - playerId
-  - fullName
-  - shortName
-  - position
-  - imgId
-  - orgId
-  - orgAbbr
-  - teamAbbr
-  - serviceTime
-  - g
-  - gs
-  - ip
-  - h
-  - hr
-  - bb
-  - k
-  - np
-  - era
-  - fip
-*/
-
-// IMPLEMENT ME!
-export type PlayerDetailDTO = {};
+export type PlayerDetailDTO = {
+  playerId?: number;
+  fullName?: string;
+  shortName?: string;
+  position?: string;
+  imgId?: number;
+  orgId?: number;
+  orgAbbr?: string;
+  teamAbbr?: string;
+  serviceTime?: number;
+  g?: number;
+  gs?: number;
+  ip?: number;
+  h?: number;
+  hr?: number;
+  bb?: number;
+  k?: number;
+  np?: number;
+  era?: number;
+  fip?: number;
+};
 
 export type PitchResult = {
   pitches: Array<PitchDTO>;
+};
+
+export type PlayerBiosResult = {
+  players: Array<PlayerBioDTO>;
+};
+
+export type PlayerDetailsResult = {
+  playerDetails: PlayerDetailDTO;
 };
